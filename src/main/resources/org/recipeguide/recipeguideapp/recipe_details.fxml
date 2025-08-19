@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.text.Text?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.recipeguide.recipeguideapp.RecipeDetailsController"
+            prefHeight="400.0" prefWidth="550.0">
+
+    <VBox spacing="15">
+        <padding>
+            <Insets bottom="40" left="40" right="40" top="40"/>
+        </padding>
+
+        <HBox alignment="CENTER">
+            <ImageView fx:id="recipeImage" fitWidth="470" fitHeight="300"/>
+        </HBox>
+
+        <Label fx:id="nameLabel" style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: #333;"/>
+        <Label fx:id="prepTimeLabel" style="-fx-font-size: 15px;"/>
+        <Label fx:id="costLabel" style="-fx-font-size: 15px;"/>
+        <Label fx:id="categoryLabel" style="-fx-font-size: 15px;"/>
+        <Text fx:id="ingredientsText" wrappingWidth="470" style="-fx-font-size: 15px; -fx-fill: #555;"/>
+        <Text fx:id="instructionsText" wrappingWidth="470" style="-fx-font-size: 15px;"/>
+    </VBox>
+
+
+</AnchorPane>

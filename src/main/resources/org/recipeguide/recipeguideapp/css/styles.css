@@ -1,0 +1,96 @@
+.button {
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #333333;
+    -fx-padding: 8px 10px;
+    -fx-border-width: 2px;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-font-size: 13px;
+}
+
+#searchByRecipeButton, #searchByIngredientButton {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-border-color: #FF6347;
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-font-size: 13px;
+    -fx-padding: 6px;
+    -fx-pref-width: 140px;
+    -fx-pref-height: 50px;
+}
+
+#searchField {
+    -fx-pref-height: 50px;
+    -fx-pref-width: 430px;
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-border-color: black;
+    -fx-border-width: 0.5px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-prompt-text-fill: gray;
+    -fx-font-size: 14px;
+    -fx-padding: 3px 7px;
+}
+
+.combo-box {
+    -fx-background-color: white;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 10px;
+    -fx-padding: 3px;
+    -fx-font-size: 12px;
+}
+
+.combo-box .list-view {
+    -fx-background-color: white;
+    -fx-border-color: #cccccc;
+}
+
+.combo-box .list-view .list-cell {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+}
+
+#filterButton, #sortButton {
+    -fx-background-color: white;
+    -fx-border-color: #FF6347;
+    -fx-border-radius: 10px;
+    -fx-border-width: 1px;
+    -fx-padding: 3px;
+    -fx-font-size: 14px;
+    -fx-pref-width: 100px;
+    -fx-pref-height: 40px;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-border-color: #FF6347;
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: white;
+}
+
+.scroll-pane .scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-pref-width: 10px;
+}
+
+.scroll-pane .scroll-bar:horizontal {
+    -fx-background-color: transparent;
+    -fx-pref-height: 10px;
+}
+
+.scroll-pane .scroll-bar:vertical .thumb {
+    -fx-background-color: #FF6347;
+    -fx-background-radius: 5px;
+}
+
+.scroll-pane .scroll-bar:horizontal .thumb {
+    -fx-background-color: #FF6347;
+    -fx-background-radius: 5px;
+}

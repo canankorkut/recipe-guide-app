@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.image.ImageView?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.recipeguide.recipeguideapp.UpdateRecipe"
+            prefHeight="850.0" prefWidth="760.0">
+
+    <Label text="Update Recipe" style="-fx-font-size: 24px; -fx-font-weight: bold;" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="20"/>
+
+    <Label text="Recipe Name:" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="80"/>
+    <TextField fx:id="recipeNameField" promptText="Enter recipe name" AnchorPane.leftAnchor="170" AnchorPane.topAnchor="80" prefWidth="400"/>
+
+    <Label text="Category:" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="120"/>
+    <ComboBox fx:id="categoryComboBox" promptText="Select Category" AnchorPane.leftAnchor="170" AnchorPane.topAnchor="120" prefWidth="400">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Ana Yemek"/>
+                <String fx:value="Tatlı"/>
+                <String fx:value="Salata"/>
+                <String fx:value="Çorba"/>
+                <String fx:value="Atıştırmalık"/>
+            </FXCollections>
+        </items>
+    </ComboBox>
+
+    <Label text="Preparation Time (mins):" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="160"/>
+    <TextField fx:id="preparationTimeField" promptText="Enter preparation time" AnchorPane.leftAnchor="170" AnchorPane.topAnchor="160" prefWidth="400"/>
+
+    <Label text="Instructions:" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="200"/>
+    <TextArea fx:id="instructionsArea" promptText="Enter recipe instructions" AnchorPane.leftAnchor="170" AnchorPane.topAnchor="200" prefWidth="400" prefHeight="100"/>
+
+    <Label text="Recipe Image:" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="320"/>
+    <ImageView fx:id="recipeImageView" fitWidth="50" fitHeight="50" AnchorPane.leftAnchor="170" AnchorPane.topAnchor="360"/>
+    <Button text="Upload Image" onAction="#onUploadImage" AnchorPane.leftAnchor="170" AnchorPane.topAnchor="320"/>
+
+    <Label text="Add New Ingredient:" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="430"/>
+
+    <TextField fx:id="ingredientNameField" promptText="New Ingredient Name" AnchorPane.leftAnchor="170" AnchorPane.topAnchor="430" prefWidth="100"/>
+
+    <TextField fx:id="ingredientQuantityField" promptText="Total Quantity" AnchorPane.leftAnchor="290" AnchorPane.topAnchor="430" prefWidth="100"/>
+    <ComboBox fx:id="ingredientUnitComboBox" promptText="Select Unit" AnchorPane.leftAnchor="400" AnchorPane.topAnchor="430" prefWidth="100">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="gram"/>
+                <String fx:value="kilogram"/>
+                <String fx:value="adet"/>
+                <String fx:value="mililitre"/>
+                <String fx:value="litre"/>
+            </FXCollections>
+        </items>
+    </ComboBox>
+
+    <TextField fx:id="unitPriceField" promptText="Unit Price" AnchorPane.leftAnchor="520" AnchorPane.topAnchor="430" prefWidth="80"/>
+
+    <Button text="Add New Ingredient" onAction="#onAddIngredient" AnchorPane.leftAnchor="620" AnchorPane.topAnchor="430"/>
+
+    <Label text="Number of Ingredients:" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="480"/>
+    <TextField fx:id="ingredientCountField" promptText="Enter number of ingredients" AnchorPane.leftAnchor="170" AnchorPane.topAnchor="480" prefWidth="200"/>
+    <Button text="Create Ingredients" onAction="#onCreateIngredients" AnchorPane.leftAnchor="380" AnchorPane.topAnchor="480"/>
+
+    <VBox fx:id="ingredientsVBox" spacing="10" AnchorPane.leftAnchor="170" AnchorPane.topAnchor="540"/>
+
+    <Button text="Update Recipe" onAction="#onUpdateRecipe" AnchorPane.rightAnchor="90" AnchorPane.bottomAnchor="30"/>
+    <Button text="Cancel" onAction="#onCancel" AnchorPane.rightAnchor="20" AnchorPane.bottomAnchor="30"/>
+
+</AnchorPane>
