@@ -1,5 +1,5 @@
 ﻿# Recipe Guide App
-![Recipe Guide App Screenshot](screenshot.png)
+![Image](https://github.com/user-attachments/assets/1255817c-3802-4a71-b203-a16624be14aa)
 
 
 ## 📋 Project Overview
@@ -7,7 +7,6 @@ This desktop application allows users to:
 - Store and manage recipes
 - Track ingredient inventory
 - Discover dishes that can be prepared with available ingredients  
-It also includes **dynamic search, advanced filtering, and intelligent recipe recommendations**.
 
 
 ## 🚀 Features
@@ -75,12 +74,17 @@ It also includes **dynamic search, advanced filtering, and intelligent recipe re
 3. Update database connection settings in the app  
 
 ### Running the Application
-```bash
-# Clone repository
-git clone https://github.com/canankorkut/recipe-guide-app.git
-
-
-# Go to project directory
-cd recipe-guide-app
-
-
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/canankorkut/recipe-guide-app.git
+   ```
+2. **Navigate to project directory:**
+   ```bash
+   cd recipe-guide-app
+   ```
+3. **Ensure PostgreSQL is running and accessible**
+4. **Compile and run:**
+   ```bash
+   javac --module-path /path/to/javafx/lib --add-modules javafx.controls,javafx.fxml *.java
+   java --module-path /path/to/javafx/lib --add-modules javafx.controls,javafx.fxml MainApplication
+   ```
