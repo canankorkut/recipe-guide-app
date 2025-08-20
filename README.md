@@ -1,5 +1,5 @@
 ﻿# Recipe Guide App
-![Image](https://github.com/user-attachments/assets/1255817c-3802-4a71-b203-a16624be14aa)
+![Image](https://github.com/user-attachments/assets/61664739-725b-47e3-9ced-fed8844b2d65)
 
 
 ## 📋 Project Overview
@@ -88,3 +88,4 @@ This desktop application allows users to:
    javac --module-path /path/to/javafx/lib --add-modules javafx.controls,javafx.fxml *.java
    java --module-path /path/to/javafx/lib --add-modules javafx.controls,javafx.fxml MainApplication
    ```
+
